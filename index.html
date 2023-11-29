@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href=".//assets/logo_circulo.png" type="image/x-icon" style="border-radius: 50%;">
+  <link rel="stylesheet" href="./index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400;8..144,700&display=swap" rel="stylesheet">
@@ -12,28 +14,32 @@
 <body>
   <header>
     <nav>
-      <img class="burguer-menu" src="./icons/icon_menu.svg" alt="menu">
-  
-      <div class="desktop-menu inactive">
-        <div>
-          <a href="" class="href-logo">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
-          </a>
-        </div>
+      <img class="burguer-menu inactive" src="./icons/icon_menu.svg" alt="menu">
+      
+      <div class="desktop-menu">
+        
+        
         <ul>
+          <a href="./index.html" class="logo_header">
+            <img class="logo_header" src="./assets/TRC_logo.jpg" alt="logo de la empresa">
+          </a>
           <li>
-            BUSCAR UN INMUEBLE
+            <a href="#">
+              BUSCAR UN INMUEBLE
+            </a>
           </li>
           <li>
             <a href="#">OTROS SERVICIOS</a>
           </li>
+        </ul>
+        <ul>
           <li>
             <a href="#">CONTACTANOS</a>
           </li>
         </ul>
       </div>
-  
-      <div class="drop-menu-desk">
+      
+      <div class="drop-menu-desk inactive">
         <ul>
           <li>
             <a href="#">TODOS</a>
@@ -49,8 +55,8 @@
 
       <div class="mobile-menu inactive">
         <div>
-          <a href="" class="href-logo">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+          <a href="#" class="logo_header">
+            <img src="./assets/TRC_logo.jpg" alt="logo" class="logo_header">
           </a>
         </div>
         <ul>
@@ -58,10 +64,10 @@
             <a href="">TODOS LOS INMUEBLES</a>
           </li>
           <li>
-            <a href="/">INMUEBLES EN VENTA</a>
+            <a href="/">EN VENTA</a>
           </li>
           <li>
-            <a href="/">INMUEBLES EN RENTA</a>
+            <a href="/">EN RENTA</a>
           </li>
           <li>
             <a href="/">CONTACTANOS</a>
@@ -72,7 +78,23 @@
   </header>
   <main>
     <section class="hero">
-      
+      <div class="hero-image">
+        <div>
+          El pasado no cuenta <br>
+          vive tu presente <br>
+          y asegura tu futuro. <br>
+          Somos tu mejor opción.
+        </div>
+      </div>
+    </section>
+    <section class="presentation">
+      <div class="presentation-image">
+        <img class="presentation-image" src="./assets/Banner_V2-removebg.png" alt="logo de la empresa">
+      </div>
+      <div>
+        Nuestro equipo esta conformado por un gran grupo de profesionales especializados en ofrecer diferentes servicios que atienden y satisfacen las necesidades de Corporativos, Industrias, Comercios y Hogares. <br>
+        Somos un equipo listo para brindarte una experiencia extraordinaria, comprometidos en ayudarte a tomar decisiones y oportunidades para asegurar tu fúturo.
+      </div>
     </section>
   </main>
   <footer>
