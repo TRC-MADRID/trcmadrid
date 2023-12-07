@@ -1,16 +1,18 @@
 :root {
   --brand-color: #240E40;
   --main-color: #8B94A3;
-  --bg-color-white: #e7e7e7;
+  --bg-color-white: #f3f3f3;
   --bg-color-black: #232323;
-  --shadow: 0px 0px 15px 4px #4a4a4a;;
+  --shadow: 0px 0px 15px 4px #4a4a4a;
+  --ligth: 0px 0px 6px 2px #c2c2c2;
   font-size: 62.5%;
+
 }
 * {
   margin: 0;
   padding: 0;
   font-family: 'Roboto Flex', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .inactive {
@@ -19,8 +21,17 @@ display: none;
 
 nav ul, a{
   list-style: none;
+  text-decoration: none;
   display: inline-block;
   padding: 0;
+}
+
+body a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 /* desktop header --- */
@@ -28,7 +39,7 @@ header, nav {
   display: flex;
   width: 100%;
   height: 8rem;
-  background-color: var(--main-color);
+  background-color: var(--brand-color);
   justify-content: center;
   align-items: center;
 }
@@ -60,6 +71,8 @@ header, nav {
   padding: 0;
 }
 
+/* Header buttons ---- */
+
 .desktop-menu li {
   display: flex;
   height: 6rem;
@@ -73,8 +86,9 @@ header, nav {
   border-radius: 0.5rem;
   background-color: var(--brand-color);
   cursor: pointer;
-  box-shadow: var(--shadow);
+  box-shadow: var(--ligth);
 }
+
 
 .desktop-menu li a {
   text-decoration: none;
@@ -82,6 +96,7 @@ header, nav {
   font-weight: 400;
   font-size: 1.6rem;
 }
+/* ----- Header buttons  */
 
 /* --- Desktop header */
 
@@ -126,14 +141,125 @@ header, nav {
   font-weight: 100;
 }
 
+/* presentation --- */
+
 .presentation {
   display: flex;
   width: 100%;
   height: 33vw;
   background-color: var(--bg-color-white);
+  justify-content: center;
+  align-items: center;
 }
 
 .presentation-image {
-  width: 80%;
+  display: flex;
+  width: 40%;
+  justify-content: right;
+}
+
+.presentation-image img {
+  width: 90%;
+  height: auto;
   padding: 1rem;
+}
+
+.presentation :nth-child(2) {
+  width: 60%;
+  height: auto;
+  padding: 1rem;
+  padding-right: 5rem;
+}
+
+/* ------- presentation  */
+
+footer {
+  background-color: var(--bg-color-black);
+  justify-content: center;
+  color: var(--bg-color-white);
+}
+
+.contact_icons_container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-center;
+  align-items: center;
+}
+
+.contact_icons_container ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+}
+
+.contact_icon {
+  position: relative;
+  display: flex;
+  width: 9rem;
+  height: 9rem;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_icon:hover{
+  /* background-color: var(--bg-color-white); */
+  box-shadow: var(--ligth);
+  border: solid 2px var(--bg-color-white);
+}
+
+.icon_footer {
+  margin: 5% 5%;
+}
+
+
+
+.icon_footer img {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+}
+
+.icon_footer p{
+  color: var(--main-color);
+  position: absolute;
+  bottom: -3rem;
+  font-size: 1.4rem;
+}
+
+.info_footer {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  margin: 2rem 0;
+  color: var(--main-color);
+}
+
+.info_footer span, .info_footer a {
+  color: var(--main-color);
+  padding: 0 2%;
+} 
+
+.info_footer a:hover {
+  color: var(--bg-color-white);
+}
+
+.creditos {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: var(--main-color);
+  justify-content: center;
+}
+
+.creditos , .creditos a {
+  color: var(--main-color);
 }
