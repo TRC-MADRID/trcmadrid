@@ -307,9 +307,37 @@ background-color: var(--main-color);
 }
 /* --- header */
 /* hero --- */
+.hero-image{
+  display: flex;
+  height: 100%;
+  padding: 0;
+  justify-content: center;
+  box-shadow: inset 0rem -5rem 6rem 0rem #232323;
 
+}
+
+.hero-image div {
+  width: 100%;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
 /* --- hero */
-  /* footer --- */
+/* presentatioin --- */
+.presentation {
+  flex-wrap: wrap;
+  height: auto;
+}
+.presentation-image {
+  width: 100%;
+  justify-content: center;
+}
+.presentation :nth-child(2) {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+/* --- presentatioin */
+/* footer --- */
   .info_footer {
     font-size: 8px;
     font-weight: 100;
