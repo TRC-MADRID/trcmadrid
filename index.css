@@ -44,6 +44,10 @@ header, nav {
   align-items: center;
 }
 
+.burguer-menu {
+  display: none;
+}
+
 .logo_header {
   width: 5rem;
   height: 5rem;
@@ -114,6 +118,10 @@ header, nav {
   font-size: 1.6rem;
   text-decoration: none;
   color: #232323;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 /* hero ---------- */
@@ -262,4 +270,53 @@ footer {
 
 .creditos , .creditos a {
   color: var(--main-color);
+}
+
+
+@media screen and (max-width: 426px) { 
+/* header --- */
+.desktop-menu {
+  display: none;
+}
+
+nav {
+  justify-content: space-between;
+  padding: 0 2.5rem;
+}
+
+.burguer-menu {
+display: flex;
+width: 4rem;
+height: 4rem;
+border-radius: 5px;
+justify-content: center;
+align-items: center;
+background-color: var(--main-color);
+}
+
+.burguer-menu:hover {
+  /* background-color: var(--bg-color-white); */
+  border: solid 1px white;
+  box-shadow: var(--ligth);
+}
+
+.burguer-menu img {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+/* --- header */
+/* hero --- */
+
+/* --- hero */
+  /* footer --- */
+  .info_footer {
+    font-size: 8px;
+    font-weight: 100;
+  }
+
+  .info_footer a {
+    margin-top: 1rem;
+  }
+  /* --- footer */
 }
