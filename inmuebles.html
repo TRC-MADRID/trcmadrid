@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href=".//assets/logo_circulo.png" type="image/x-icon" style="border-radius: 50%;">
   <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./inmuebles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;400;500;700&display=swap" rel="stylesheet"> -->
@@ -27,7 +28,7 @@
             </a>
           </li>
           <li>
-            <a href="#Top">OTROS SERVICIOS</a>
+            <a href="#">OTROS SERVICIOS</a>
           </li>
         </ul>
         <ul>
@@ -40,7 +41,7 @@
       <div class="drop-menu-desk inactive">
         <ul>
           <li>
-            <a href="./inmuebles.html">TODOS</a>
+            <a href="#">TODOS</a>
           </li>
           <li>
             <a href="./inmuebles.html">INMUEBLES EN VENTA</a>
@@ -57,7 +58,7 @@
             <a href="./inmuebles.html">TODOS LOS INMUEBLES</a>
           </li>
           <li>
-            <a href="./inmuebles.html">EN VENTA</a>
+            <a href="#">EN VENTA</a>
           </li>
           <li>
             <a href="#">EN RENTA</a>
@@ -76,25 +77,29 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <div class="hero-image">
-        <div>
-          El pasado no cuenta <br>
-          vive tu presente <br>
-          y asegura tu futuro. <br>
-          Somos tu mejor opción.
+    <div class="cards-container"> 
+
+      <div class="card">
+        <img src="ruta/a/tu/imagen.jpg" alt="Imagen del departamento">
+        <div class="card-content">
+          <h2>ID: 1101</h2>
+          <h3>Departamento en Venta</h3>
+          <p class="price">$2,580,000 MXN</p>
+          <p class="address">Dirección: Eje Central Lázaro Cárdenas , Centro De La Ciudad De México Area 1, Cuauhtémoc, Ciudad De México</p>
+          <p class="details">•125mT •105mC •2 Hab •1wc •2 Parking</p>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatum saepe, vitae illum dolor vel officia, nulla, aspernatur quis vero provident! Sint velit magnam beatae repudiandae ipsum, excepturi eum eligendi.</p>
+          <ul class="tags">
+            <li>Alberca</li>
+            <li>Seguridad</li>
+            <li>Piso</li>
+            <!-- Agrega más etiquetas según sea necesario -->
+          </ul>
         </div>
       </div>
-    </section>
-    <section class="presentation">
-      <div class="presentation-image">
-        <img src="./assets/Banner_V2-removebg.png" alt="logo de la empresa">
-      </div>
-      <div>
-        Nuestro equipo esta conformado por un gran grupo de profesionales especializados en ofrecer diferentes servicios que atienden y satisfacen las necesidades de Corporativos, Industrias, Comercios y Hogares. <br>
-        Somos un equipo listo para brindarte una experiencia extraordinaria, comprometidos en ayudarte a tomar decisiones y oportunidades para asegurar tu fúturo.
-      </div>
-    </section>
+      
+
+    </div>
+    <div class="form-contact--container"></div>
   </main>
   <footer>
     <section id="Contact">

@@ -105,19 +105,31 @@ header, nav {
 /* --- Desktop header */
 
 .drop-menu-desk {
-  padding: 0.5rem 1rem;
   position: absolute;
   border-radius: 0.5rem;
   background-color: var(--bg-color-white);
   box-shadow: var(--shadow);
   top: 8rem;
   left: 20%;
+  overflow: hidden;
+  z-index: 1;
+}
+.drop-menu-desk ul {
+  margin: 0;
+}
+
+.drop-menu-desk ul li:hover {
+  cursor: pointer;
+  background-color: #bababa;
 }
 
 .drop-menu-desk a {
   font-size: 1.6rem;
   text-decoration: none;
   color: #232323;
+  padding:0 1rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
 }
 
 .mobile-menu {
@@ -272,72 +284,114 @@ footer {
   color: var(--main-color);
 }
 
+.creditos span, .creditos span a {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
 
 @media screen and (max-width: 426px) { 
-/* header --- */
-.desktop-menu {
-  display: none;
-}
+  /* header --- */
+  .desktop-menu {
+    display: none;
+  }
 
-nav {
-  justify-content: space-between;
-  padding: 0 2.5rem;
-}
+  nav {
+    justify-content: space-between;
+    padding: 0 2.5rem;
+  }
 
-.burguer-menu {
-display: flex;
-width: 4rem;
-height: 4rem;
-border-radius: 5px;
-justify-content: center;
-align-items: center;
-background-color: var(--main-color);
-}
-
-.burguer-menu:hover {
-  /* background-color: var(--bg-color-white); */
-  border: solid 1px white;
-  box-shadow: var(--ligth);
-}
-
-.burguer-menu img {
-  display: block;
-  width: 2.5rem;
-  height: 2.5rem;
-}
-/* --- header */
-/* hero --- */
-.hero-image{
+  .burguer-menu {
   display: flex;
-  height: 100%;
-  padding: 0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
   justify-content: center;
-  box-shadow: inset 0rem -5rem 6rem 0rem #232323;
+  align-items: center;
+  background-color: var(--main-color);
+  }
 
-}
+  .burguer-menu:hover {
+    /* background-color: var(--bg-color-white); */
+    border: solid 1px white;
+    box-shadow: var(--ligth);
+  }
 
-.hero-image div {
-  width: 100%;
-  padding: 1.5rem 0;
-  text-align: center;
-  font-size: 2rem;
-}
-/* --- hero */
-/* presentatioin --- */
-.presentation {
-  flex-wrap: wrap;
-  height: auto;
-}
-.presentation-image {
-  width: 100%;
-  justify-content: center;
-}
-.presentation :nth-child(2) {
-  width: 100%;
-  padding: 1rem 2rem;
-}
-/* --- presentatioin */
-/* footer --- */
+  .burguer-menu img {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .burguer-menu img:hover {
+    border: none;
+    box-shadow: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 1;
+    background-color: var(--bg-color-white);
+    box-shadow: var(--shadow);
+  }
+
+  .mobile-menu li a {
+    width: 90vw;
+    padding-top: .5rem;
+    padding-left: 0.2rem;
+    color: var(--bg-color-black);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .mobile-menu li a:hover {
+    background-color: #bababa;
+  }
+  /* --- header */
+  /* hero --- */
+  .hero-image{
+    display: flex;
+    height: 100%;
+    padding: 0;
+    justify-content: center;
+    box-shadow: inset 0rem -5rem 6rem 0rem #232323;
+  }
+
+  .hero-image div {
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  /* --- hero */
+  /* presentatioin --- */
+  .presentation {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .presentation-image {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .presentation :nth-child(2) {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  /* --- presentatioin */
+  /* footer --- */
+  .icon_footer {
+    margin: 20px 30px;
+  }
+
   .info_footer {
     font-size: 8px;
     font-weight: 100;
@@ -346,5 +400,28 @@ background-color: var(--main-color);
   .info_footer a {
     margin-top: 1rem;
   }
+
+  .creditos span, .creditos span a {
+    font-size: 1rem;
+  }
   /* --- footer */
+  .inactive {
+    display: none;
+  }
+  .drop-menu-desk {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .drop-menu-desk{
+    left: 17.5%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .drop-menu-desk{
+    left: 15.5%;
+  }
 }
