@@ -1,6 +1,27 @@
 /* carousel --- */
+.carousel-container, .carousel {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* max-height: 220px; */
+  /* overflow: hidden; */
+}
+
 .carousel {
-  width: 15rem;
+  width: 100%;
+  padding: 10px 40px;
+}
+
+.carousel-inner {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 1);
+}
+
+.carousel-item {
+  height: 100%;
 }
 /* --- carousel */
 
@@ -12,7 +33,7 @@
 }
 
 .card {
-  width: 300px;
+  width: 310px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px #ccc;
   margin: 10px;
