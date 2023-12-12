@@ -1,3 +1,16 @@
+/* carousel --- */
+.carousel {
+  width: 15rem;
+}
+/* --- carousel */
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .card {
   width: 300px;
   border: 1px solid #ccc;
