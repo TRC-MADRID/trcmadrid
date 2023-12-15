@@ -1,30 +1,3 @@
-/* carousel --- */
-.carousel-container, .carousel {
-  display: flex;
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  /* max-height: 220px; */
-  /* overflow: hidden; */
-}
-
-.carousel {
-  width: 100%;
-  padding: 10px 40px;
-}
-
-.carousel-inner {
-  width: 60%;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 1);
-}
-
-.carousel-item {
-  height: 100%;
-}
-/* --- carousel */
-
 .cards-container {
   width: 100%;
   display: flex;
@@ -33,42 +6,53 @@
 }
 
 .card {
-  width: 310px;
+  width: 320px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px #ccc;
   margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card img {
-  width: 100%;
+  max-width: 100%;
+  height: fit-content;
+  max-height: 100%;
+  margin: 0 auto;
 }
 
 .card-content {
   padding: 10px;
 }
 
-.card-content h2, .card-content h3 {
+.card-content h3 {
   margin: 0;
   padding: 0;
 }
 
+.card-content p {
+  margin: 5px 0;
+}
+
 .card-content .price {
-  color: #f00;
+  color: #1000ca;
   font-weight: bold;
 }
 
 .card-content .address {
-  font-size: 0.9em;
-  color: #666;
+  font-size: 0.8em;
+  padding-bottom: 2px;
+  color: #777;
 }
 
 .card-content .details {
   font-size: 0.8em;
-  color: #999;
+  color: #666;
 }
 
 .card-content .description {
-  margin-top: 10px;
+  margin: 10px 0;
+  font-size: 1.4rem;
 }
 
 .card-content .tags {
@@ -78,8 +62,9 @@
 
 .card-content .tags li {
   display: inline-block;
-  background-color: #f0f0f0;
+  background-color: #c9c9c9;
   padding: 2px 5px;
   margin-right: 5px;
   font-size: 0.8em;
+  border-radius: 2px;
 }

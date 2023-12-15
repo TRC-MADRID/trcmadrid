@@ -19,7 +19,6 @@ function toggleMenu(event) {
 
 function openFullscreen( openCarousel ) {
   openCarousel = carousel;
-
   if (openCarousel.requestFullscreen) {
     openCarousel.requestFullscreen();
   } else if (openCarousel.webkitRequestFullscreen) { /* Safari */

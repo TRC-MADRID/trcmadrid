@@ -292,11 +292,18 @@ footer {
 
 @media screen and (max-width: 426px) { 
   /* header --- */
+
+  header {
+    height: 6rem;
+  }
+  
   .desktop-menu {
     display: none;
   }
 
   nav {
+    height: auto;
+    align-items: center;
     justify-content: space-between;
     padding: 0 2.5rem;
   }
@@ -336,7 +343,7 @@ footer {
     height: fit-content;
     position: absolute;
     left: 0;
-    top: 80px;
+    top: 60px;
     z-index: 1;
     background-color: var(--bg-color-white);
     box-shadow: var(--shadow);
