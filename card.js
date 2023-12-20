@@ -3,7 +3,7 @@
     {
       id: 1001,
       images: ['imagen1.jpg', 'imagen2.jpg'],
-      title: 'Dep en venta',
+      title: 'Departamento en venta',
       price: '$4,900,000 MXN',
       status: 'Disponible',
       address: 'Félix Cuevas, Ciudad De México',
@@ -14,7 +14,7 @@
     {
       id: 1002,
       images: ['imagen1.jpg', 'imagen2.jpg'],
-      title: 'Dep en venta',
+      title: 'Departamento en venta',
       price: '$3,900,000 MXN',
       status: 'Disponible',
       address: 'Félix Cuevas, Ciudad De México',

@@ -37,10 +37,12 @@
 
 .carousel-item {
   position: relative;
-  display: none;
+  display: flex;
   float: left;
-  width: 100%;
-  /* margin-right: -100%; */
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
@@ -56,15 +58,6 @@
 .carousel-item-prev {
   display: block;
 }
-
-.carousel-item.active {
-  display: flex;
-  max-height: 100%;
-  width: auto;
-  margin: 0 auto;
-  align-items: center;
-}
-
 
 .carousel-item-next:not(.carousel-item-start),
 .active.carousel-item-end {

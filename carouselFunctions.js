@@ -1,5 +1,5 @@
   // Obtén todos los elementos con la clase 'carousel-slide'
-  const carousels = document.querySelectorAll('.carousel-slide');
+  const carousels = document.querySelectorAll('.carousel');
 
   // Itera sobre cada elemento 'carousel-slide'
   carousels.forEach((carousel) => {
@@ -36,7 +36,7 @@
     showSlide(counter);
 
     // Cambiar automáticamente de imagen cada 3 segundos
-    // setInterval(nextSlide, 5000);
+    setInterval(nextSlide, 5000);
 
     // Agrega eventos click a los botones de control
     const prevButton = carousel.querySelector('.carousel-control-prev');
