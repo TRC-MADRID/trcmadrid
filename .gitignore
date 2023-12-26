@@ -3,3 +3,5 @@ pruebas.css
 /node_modules
 /firebase
 /.firebase
+firebase.json
+.firebaserc
