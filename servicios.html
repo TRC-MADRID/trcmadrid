@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href=".//assets/logo_circulo.png" type="image/x-icon" style="border-radius: 50%;">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./contactDrop.css">
+  <link rel="stylesheet" href="./servicios.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+  <title>Inmuebles</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EDHDPS6BX4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EDHDPS6BX4');
+</script>
+<body>
+  <header>
+    <nav>
+      <a href="./index.html" class="logo_header">
+        <img class="logo_header" src="./assets/TRC_logo.jpg" alt="logo de la empresa">
+      </a>
+
+      <div class="desktop-menu">
+        <ul>
+          <li class="BuscarInmueble">
+            <a href="#">
+              BUSCAR UN INMUEBLE
+            </a>
+          </li>
+          <li>
+            <a href="#">OTROS SERVICIOS</a>
+          </li>
+        </ul>
+        <ul>
+          <li onclick="showCD()">
+            <a href="#Contact" >CONTACTANOS</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="drop-menu-desk inactive">
+        <ul>
+          <li>
+            <a href="./inmuebles.html">INMUEBLES EN VENTA</a>
+          </li>
+          <li>
+            <a href="#">INMUEBLES EN RENTA</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu inactive">
+        <ul>
+          <li>
+            <a href="./inmuebles.html">EN VENTA</a>
+          </li>
+          <li>
+            <a href="#">EN RENTA</a>
+          </li>
+          <li>
+            <a href="#">OTROS SERVICIOS</a>
+          </li>
+          <li id="contactMobileDropMenu">
+            <a href="#Contact">CONTACTANOS</a>
+          </li>
+        </ul>
+      </div>
+      <div class="burguer-menu">
+        <img class="burguer-menu" src="./assets/icons/icon_menu.svg" alt="menu">
+      </div>
+    </nav>
+  </header>
+  <div class="main-container">
+    <main>
+      <h1 class="title">En TRC MADRID nos dedicamos a ofrecerte servicios integrales que simplifican cada aspecto del proceso inmobiliario en México.</h1>
+      
+      <h2 class="title">Trámites de Créditos Hipotecarios:</h2>
+      <p>Obtener la llave de tu hogar soñado nunca fue tan fácil. Manejamos trámites de créditos hipotecarios con INFONAVIT, FOVISSSTE y otros bancos reconocidos. Nuestro equipo especializado te guiará paso a paso, asegurándose de que cada detalle esté perfectamente alineado para ti.</p>
+      
+      <h2 class="title">Mantenimiento Inmobiliario:</h2>
+      <p>Mantén tu hogar en óptimas condiciones con nuestros servicios de mantenimiento preventivo y correctivo.</p>
+      
+      <h2 class="title">Compra y Venta de Inmuebles:</h2>
+      <p>¿Buscas comprar o vender una propiedad? Estamos aquí para hacer que este proceso sea sin complicaciones. Nuestro equipo conoce el mercado inmobiliario en México y te brindará la asesoría necesaria para tomar decisiones informadas y estratégicas.</p>
+      
+      <div>
+        <h2 class="title">Por Qué Elegirnos:</h2>
+        <ul>
+          <li>Experiencia confiable en el mercado inmobiliario mexicano.</li>
+          <li>Asesoramiento personalizado y transparente.</li>
+          <li>Compromiso con la excelencia en cada servicio.</li>
+          <li>Trato amable y profesional.</li>
+        </ul>
+      </div>
+      
+      <p>En TRC MADRID, nos enorgullece ser tu socio en el camino hacia tu hogar perfecto. ¡Con nosotros, cada paso es un paso más cerca de tu sueño inmobiliario!</p>
+      
+      <p>Contáctanos hoy para comenzar tu viaje. ¡Tu hogar te espera!</p>
+      
+    </main>
+    <aside>
+      <div>
+        <img src="https://onedrive.live.com/embed?resid=C09768F8905DB1DB%21228&authkey=%21APL8zVoBg6ycMxg&width=660" alt="image add">
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <section id="contactDrop" class="contact-drop">
+      <div class="contact-drop--header">
+        <h3>Agendar cita</h3>
+        <span id="contactDropIcon">
+          <img src="./assets/icons/flechita.svg" alt="mostrar menu de contacto">
+        </span>
+      </div>
+      <p>Ponte en contacto directamente con nosotros</p>
+      <div class="contact-drop--icons" >
+        <a href="tel:5593726221" target="_blank">
+          <img src="./assets/icons/001-llamada-telefonica.png" alt="Llamar por telefono">
+        </a>
+        <a href="https://wa.me/5650719948?text=Hola!!%0AQuisiera%20saber%20más%20acera%20de%20sus%20inmuebles%20y%20servicios." target="_blank">
+          <img src="./assets/icons/002-whatsapp.png" alt="Mandar Mensaje de Whatsapp">
+        </a>
+        <a href="mailto:edgar.madrid@trcmadrid.com.mx?subject=Inmuebles%20y%20servicios&body=Hola!!!%0AEstoy%20interesado%20en%20sus%20inmuebles/servicios.%0AQuisiera%20más%20información" target="_blank">
+          <img src="./assets/icons/003-correo-electronico-vacio.png" alt="Mandar correo">
+        </a>
+      </div>
+      <div class="horario">
+        <p>Horario de atencion</p>
+        <p>Lunes a viernes 9:00AM - 6:00PM</p>
+      </div>
+      <p>Muchas gracias por su interes, nos estaremos comunicando con usted por el medio que nos haya contactado.</p>
+    </section>
+  </footer>
+  <script src="./main.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA0NAjKOSmM2Yie7e6P11jueaVthkN0ahE",
+      authDomain: "trc-web-971eb.firebaseapp.com",
+      projectId: "trc-web-971eb",
+      storageBucket: "trc-web-971eb.appspot.com",
+      messagingSenderId: "288470274800",
+      appId: "1:288470274800:web:fc36ffdaae68bdfec8e835",
+      measurementId: "G-88NR73RF65"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
