@@ -47,7 +47,7 @@ aside img {
 }
 
 .main-container ul li::before {
-  content: " •  ";
+  content: " • ";
   padding: 4px 0;
 }
 

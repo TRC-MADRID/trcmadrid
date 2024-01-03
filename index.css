@@ -101,6 +101,15 @@ header, nav {
   font-weight: 400;
   font-size: 1.6rem;
 }
+
+.service-button a {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+}
+
 /* ----- Header buttons  */
 
 /* --- Desktop header */
