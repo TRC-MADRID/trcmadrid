@@ -1,11 +1,18 @@
+header {
+  position: sticky;
+}
+
 .main-container {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   flex-direction: column-reverse;
-  margin-bottom: 3.5rem;
-  padding: 0 1rem;
+  padding: 0;
   justify-content: center;
+}
+
+.main-container main {
+  box-shadow: inset 2px 6px 9px 0px #000;
 }
 
 .main-container p {
@@ -17,6 +24,41 @@
   display: flex;
   justify-content: center;
   margin: 0.5rem auto;
+}
+
+.min-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 20px 0;
+  background-color: #c2c2c2;
+  border-radius: 5px;
+  padding: 2%;
+  overflow: hidden;
+  text-shadow: 0px 0px 6px white;
+}
+
+.min-card h2 {
+  margin: 0;
+}
+
+.min-card div {
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+.min-card div :nth-child(3) {
+  margin-top: 2rem;
+}
+
+main div img {
+  position: absolute;
+  width: auto;
+  height: 150%;
+  z-index: 0;
+  right: 0;
+  bottom: -10px;
+  opacity: 0.7;
 }
 
 aside div {
@@ -35,10 +77,14 @@ aside img {
 
 .main-container main {
   width: 100%;
+  height: 100%;
   display: flex;
+  padding: 5%;
   flex-wrap: wrap;
   justify-content: flex-start;
   text-align: left;
+  position: relative;
+  background: linear-gradient( rgba(90,120,255,0.9), rgba(121,134,255,0.45), rgba(121,142,255,0.27) );
 }
 
 .main-container ul {
@@ -55,7 +101,16 @@ aside img {
   margin-top: 2rem;
 }
 
+footer {
+  z-index: 2;
+}
+
 @media screen and (min-width: 1024px) {
+
+  header {
+    position: sticky;
+  }
+
   .main-container {
     width: 100%;
     height: 100%;
@@ -69,7 +124,7 @@ aside img {
 
   .main-container main {
     grid-area: main;
-    padding-right: 8%;
+    padding:  5%;
   }
 
   .main-container aside {

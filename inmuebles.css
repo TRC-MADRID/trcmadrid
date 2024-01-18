@@ -112,3 +112,9 @@
   border-radius: 2px;
   margin-bottom: 0.2rem;
 }
+
+.card-content a {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
