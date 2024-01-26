@@ -429,6 +429,21 @@ footer {
     display: none;
   }
   
+
+  .icon_footer {
+    position: relative;
+  }
+
+  .certificado {
+    display: flex;
+    position: absolute;
+    width: 20rem;
+    left: 15%;
+    bottom: -26%;
+    z-index: 0;
+    opacity: 50%;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
