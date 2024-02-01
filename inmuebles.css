@@ -114,7 +114,19 @@
 }
 
 .card-content a {
-  width: 100%;
-  text-align: center;
+  display: flex;
+  width: fit-content;
   font-size: 14px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 2%;
+  background-color: var(--brand-color);
+  border-radius: 5px;
 }
+
+.card-content a:hover {
+  color: rgb(255, 140, 0);
+  text-decoration: underline;
+  background-color: #ccc;
+}
+
