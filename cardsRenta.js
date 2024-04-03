@@ -173,7 +173,7 @@ const renderCards = (buildings) => {
     const cards = [];
     cards.push(card);
 
-    app.append(...cards);
+    // app.append(...cards);
 
   });  
 };
