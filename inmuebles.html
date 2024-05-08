@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,13 +31,8 @@
 
       <div class="desktop-menu">
         <ul>
-          <li class="BuscarInmueble">
-            <a href="#">
-              BUSCAR UN INMUEBLE
-            </a>
-          </li>
-          <li class="service-button">
-            <a href="./servicios.html">OTROS SERVICIOS</a>
+          <li  class="service-button">
+            <a href="./servicios.html">SERVICIOS DE MANTENIMIENTO</a>
           </li>
         </ul>
         <ul>
@@ -47,27 +42,13 @@
         </ul>
       </div>
       
-      <div class="drop-menu-desk inactive">
-        <ul>
-          <li>
-            <a href="#">INMUEBLES EN VENTA</a>
-          </li>
-          <li>
-            <a href="./renta.html">INMUEBLES EN RENTA</a>
-          </li>
-        </ul>
-      </div>
-
       <div class="mobile-menu inactive">
         <ul>
           <li>
-            <a href="#">EN VENTA</a>
+            <a href="./index.html">INICIO</a>
           </li>
           <li>
-            <a href="./renta.html">EN RENTA</a>
-          </li>
-          <li>
-            <a href="./servicios.html">OTROS SERVICIOS</a>
+            <a href="./servicios.html">SERVICIO DE MANTENIMIENTO</a>
           </li>
           <li id="contactMobileDropMenu">
             <a href="#Contact">CONTACTANOS</a>
@@ -80,13 +61,24 @@
     </nav>
   </header>
   <main>
-    <div id="cardsContainer" class="cards-container">
-    
+    <div id="cardsContainer" class="cards-container"> 
+      <div class="mantenimiento">
+        <div class="mantenimiento-image">
+          <img src="./assets/pagina en mantenimiento.webp" alt="imagen de mantenimiento">
+          <div class="pelota-container">
+            <div class="pelota"></div>
+            <span class="sombra-container">
+              <div class="pelota-sombra"></div>
+            </span>
+          </div>
+        </div>
+        <p>Lo sentimos, estamos en mantenimiento para brindarete un mejor servicio</p>
+      </div>
     </div>
     <div class="form-contact--container"></div>
   </main>
   <footer>
-    <section id="contactDrop" class="contact-drop">
+    <section id="contactDrop" class="contact-drop" onclick="showCD()">
       <div class="contact-drop--header">
         <h3>Agendar cita</h3>
         <span id="contactDropIcon">
@@ -113,30 +105,5 @@
     </section>
   </footer>
   <script src="./main.js"></script>
-  <script rel="preload" src="./card.js"></script>
-  <script src="./carouselFunctions.js"></script>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyA0NAjKOSmM2Yie7e6P11jueaVthkN0ahE",
-      authDomain: "trc-web-971eb.firebaseapp.com",
-      projectId: "trc-web-971eb",
-      storageBucket: "trc-web-971eb.appspot.com",
-      messagingSenderId: "288470274800",
-      appId: "1:288470274800:web:fc36ffdaae68bdfec8e835",
-      measurementId: "G-88NR73RF65"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
 </body>
 </html>

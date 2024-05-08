@@ -3,8 +3,6 @@ const mobileDropMenu = document.querySelector('.mobile-menu');
 const headInMenu = document.querySelector('.BuscarInmueble');
 const dropHeadInMenu = document.querySelector('.drop-menu-desk');
 const cdIcon = document.getElementById('contactDropIcon');
-const contactDrop = document.getElementById('contactDrop');
-const cntMMD = document.getElementById('contactMobileDropMenu');
 // const carousel = document.getElementById('carouselExample');
 
 
@@ -39,8 +37,3 @@ function showCD() {
 
 burguerMenu.addEventListener('click', toggleMenu)
 headInMenu.addEventListener('click', toggleMenu)
-cdIcon.addEventListener('click', showCD)
-cntMMD.addEventListener('click', showCD)
-cntMMD.addEventListener('click', () => {
-  mobileDropMenu.classList.toggle('inactive')
-})

@@ -1,12 +1,3 @@
-footer {
-  width: 100%;
-  height: 1px;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  bottom: 0;
-}
-
 .contact-drop {
   display: flex;
   flex-wrap: wrap;
@@ -50,7 +41,7 @@ footer {
 }
 
 .pop {
-  bottom: -5px;
+  transform: translateY(-230px);
 }
 
 .pop span {
@@ -109,7 +100,7 @@ footer {
   }
 
   .pop {
-    bottom: -15px;
+    transform: translateY(-240px);
   }
   
   .pop span {
@@ -124,11 +115,11 @@ footer {
     bottom: -220px;
     padding-top: 0;
   }
-
-  .pop {
-    bottom: -10px;
-  }
   
+  .pop {
+    transform: translateY(-220px);
+  }
+
   .pop span {
     transform: rotate(90deg);
   }

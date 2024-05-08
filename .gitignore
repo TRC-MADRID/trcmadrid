@@ -1,8 +1,10 @@
 pruebas.html
 pruebas.css
 pruebas.js
+/assets
 /node_modules
 /firebase
 /.firebase
 firebase.json
 .firebaserc
+firebase-debug.log
