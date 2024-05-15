@@ -2,6 +2,7 @@
   /* --brand-color: #240E40; */
   --brand-color: #080C31;
   --main-color: #8B94A3;
+  --secondary: #161BB0;
   --bg-color-white: #f3f3f3;
   --bg-color-black: #232323;
   --shadow: 0px 0px 15px 4px #4a4a4a;
@@ -10,32 +11,29 @@
 
 }
 * {
-  margin: 0;
   padding: 0;
   font-family: 'Roboto Flex', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   box-sizing: border-box;
 }
-
+body {
+  margin: 0;
+}
 .inactive {
 display: none;
 }
-
 nav ul, a{
   list-style: none;
   text-decoration: none;
   display: inline-block;
   padding: 0;
 }
-
 body a {
   text-decoration: none;
 }
-
 a:hover {
   cursor: pointer;
 }
-
 /* desktop header --- */
 header, nav {
   display: flex;
@@ -45,22 +43,18 @@ header, nav {
   justify-content: center;
   align-items: center;
 }
-
 .burguer-menu {
   display: none;
 }
-
 .logo_header {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   margin-right: 0 auto;
 }
-
 .logo_header:hover {
   box-shadow: var(--shadow);
 }
-
 .desktop-menu {
   display: flex;
   width: 80%;
@@ -68,7 +62,6 @@ header, nav {
   align-items: center;
   justify-content: space-between;
 }
-
 .desktop-menu ul {
   display: flex;
   height: 100%;
@@ -76,9 +69,7 @@ header, nav {
   margin: 0;
   padding: 0;
 }
-
 /* Header buttons ---- */
-
 .desktop-menu li {
   display: flex;
   height: 6rem;
@@ -87,22 +78,18 @@ header, nav {
   align-items: center;
   transition: all 0.2ms ease-in;
 }
-
 .desktop-menu li:hover {
   border-radius: 0.5rem;
   background-color: var(--brand-color);
   cursor: pointer;
   box-shadow: var(--ligth);
 }
-
-
 .desktop-menu li a {
   text-decoration: none;
   color: var(--bg-color-white);
   font-weight: 400;
   font-size: 1.6rem;
 }
-
 .service-button a {
   display: flex;
   flex-wrap: wrap;
@@ -110,11 +97,8 @@ header, nav {
   align-content: center;
   text-align: center;
 }
-
 /* ----- Header buttons  */
-
 /* --- Desktop header */
-
 .drop-menu-desk {
   position: absolute;
   border-radius: 0.5rem;
@@ -128,12 +112,10 @@ header, nav {
 .drop-menu-desk ul {
   margin: 0;
 }
-
 .drop-menu-desk ul li:hover {
   cursor: pointer;
   background-color: #bababa;
 }
-
 .drop-menu-desk a {
   font-size: 1.6rem;
   text-decoration: none;
@@ -142,11 +124,9 @@ header, nav {
   padding-top: 1rem;
   padding-right: 2rem;
 }
-
 .mobile-menu {
   display: none;
 }
-
 /* hero ---------- */
 .hero {
   height: fit-content;
@@ -166,7 +146,6 @@ header, nav {
   background-repeat: no-repeat;
   box-shadow: inset 0rem -40rem 16rem -20rem #232323;
 }
-
 .hero-image div {
   /* display: flex; */
   width: 60%;
@@ -174,9 +153,7 @@ header, nav {
   font-size: 2.4rem;
   font-weight: 100;
 }
-
 /* presentation --- */
-
 .presentation {
   display: flex;
   width: 100%;
@@ -185,19 +162,16 @@ header, nav {
   justify-content: center;
   align-items: center;
 }
-
 .presentation-image {
   display: flex;
   width: 40%;
   justify-content: right;
 }
-
 .presentation-image img {
   width: 90%;
   height: auto;
   padding: 1rem;
 }
-
 .presentation-text p {
   width: auto;
   height: auto;
@@ -205,30 +179,6 @@ header, nav {
   /* padding-right: 5rem; */
 }
 /* ------- presentation  */
-.mantenimiento {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10%;
-  text-align: center;
-}
-.mantenimiento p {
-  margin-top: 10px;
-}
-.mantenimiento-image {
-  display: flex;
-  position: relative;
-  min-width: 280px;
-  min-height: 280px;
-  margin: 0 auto;
-}
-.mantenimiento-image img {
-  display: flex;
-  min-width: 280px;
-  min-height: 280px;
-  max-width: 400px;
-}
 .pelota-container {
   position: absolute;
   width: 30px;
@@ -328,22 +278,17 @@ footer {
   width: 6rem;
   height: 6rem;
 }
-
-
-
 .icon_footer img {
   width: 4rem;
   height: 4rem;
   margin: 0 auto;
 }
-
 .icon_footer p{
   color: var(--main-color);
   position: absolute;
   bottom: -3rem;
   font-size: 1.4rem;
 }
-
 .info_footer {
   display: flex;
   flex-wrap: wrap;
@@ -352,17 +297,14 @@ footer {
   margin: 0 0 1rem;
   color: var(--main-color);
 }
-
 .info_footer a {
   color: var(--main-color);
   padding: 0 2%;
   margin: 0;
 } 
-
 .info_footer a:hover {
   color: var(--bg-color-white);
 }
-
 .creditos {
   display: flex;
   flex-wrap: wrap;
@@ -371,17 +313,13 @@ footer {
   color: var(--main-color);
   justify-content: center;
 }
-
 .creditos , .creditos a {
   color: var(--main-color);
 }
-
 .creditos span, .creditos span a {
   font-size: 1.2rem;
   padding-bottom: 1rem;
 }
-
-
 @media screen and (max-width: 426px) { 
   /* header --- */
 
@@ -435,7 +373,7 @@ footer {
     height: fit-content;
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 50px;
     z-index: 1;
     background-color: var(--bg-color-white);
     box-shadow: var(--shadow);
@@ -519,6 +457,9 @@ footer {
 
 }
 @media screen and (min-width: 427px) {
+  * {
+    font-size: 1.8rem;
+  }
   .hero-image div {
     font-size: 3.2rem;
   }
@@ -531,13 +472,7 @@ footer {
     left: 17.5%;
   }
 }
-
 @media screen and (min-width: 1300px) {
-  
-  .mantenimiento {
-    max-width: 800px;
-    padding-top: 50px;
-  }
   .drop-menu-desk{
     left: 15.5%;
   }

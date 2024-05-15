@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./contactDrop.css">
   <link rel="stylesheet" href="./servicios.css">
+  <link rel="stylesheet" href="./animation-serv.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;400;500;700&display=swap" rel="stylesheet">
@@ -27,11 +28,7 @@
             </a>
           </li>
         </ul>
-        <ul>
-          <li onclick="showCD()">
-            <a href="#Contact" >CONTACTANOS</a>
-          </li>
-        </ul>
+        
       </div>
       
       <div class="mobile-menu inactive">
@@ -51,35 +48,39 @@
   </header>
   <main>
     <section class="hero">
-      <img src="" alt="Logo de TRC MADRID">
-      <a href="" class="contact_Button" alt="Boton de contacto">Contactanos</a>
-      <p>En <span>TRC MADRID</span>, ofrecemos soluciones integrales de mantenimiento y reparación para tu hogar o negocio.</p>
+      <img src="./assets/Banner_V2-removebg.png" alt="Logo de TRC MADRID">
+      <a href="https://wa.me/5650719948?text=Hola!!%0AQuisiera%20saber%20más%20acera%20de%20sus%20servicios." class="contact_button" alt="Boton de contacto por whats app" target="_blank">Contactanos</a>
     </section>
     <section class="informacion">
       <div class="mantenimiento">
-        <h2>¿Que ofrecemos?</h2>
-        <h4>Mantenimiento preventivo y correctivo</h4>
-        <p>Un elemento de nuestro equipo estara encargado de revisar detalladamente las instalaciones de tu mobiliario  para identificar potenciales problemas antes de que se conviertan en reparaciones costosas.</p>
-        <p>Nuestro objetivo es restaurar la funcionalidad y estética de los espacios, extendiendo su vida útil y manteniendo tu entorno seguro y acogedor.</p>
-        <img src="" alt="Imagen Ilustrativa del sector de construcción">
+        <div>
+          <p>En <span>TRC MADRID</span>, ofrecemos soluciones integrales de mantenimiento y reparación para tu hogar o negocio.</p>
+          <h2>¿Que ofrecemos?</h2>
+          <h3>Mantenimiento preventivo y correctivo</h3>
+          <p>Un elemento de nuestro equipo estara encargado de revisar detalladamente las instalaciones de tu mobiliario  para identificar potenciales problemas antes de que se conviertan en reparaciones costosas.</p>
+          <p>Nuestro objetivo es restaurar la funcionalidad y estética de los espacios, extendiendo su vida útil y manteniendo tu entorno seguro y acogedor.</p>
+        </div>
+        <img class="revealing-image" src="./assets/Dia-del-Ingeniero.jpg" alt="Imagen Ilustrativa del sector de construcción">
       </div>
       <div class="limpieza">
         <div class="limpieza_text">
-          <h4>Beneficios de nuestro servicio:</h4>
+          <h3>Beneficios de nuestro servicio:</h4>
           <ul>
             <li>Evita emergencias: Con el mantenimiento preventivo, puedes prevenir situaciones de emergencia que generalmente resultan en gastos significativos y estrés.</li>
             <li>Eficiencia mejorada: Un sistema bien mantenido es más eficiente, lo que ayuda a controlar el consumos y reduce las facturas.</li>
             <li>Conservación a largo plazo: Mantener tu inmuevle y sus instalaciones evita daños costosos y  prolonga la vida útil.</li>
           </ul>
-          <h4>Limpieza</h4>
+          <h2>Limpieza</h2>
             <p>Si no requieres de un servicio de mantenimiento tan fuerte y no cuentas o quieres mas tiempo libre, tambien tenemos soluciones para ti.</p>
             <p>Un elemento estará al tanto de la limpieza de tu inmueble, realizando las actividades del dia a dia para mantener tu inmueble impecable</p>
         </div>
-        <img src="" alt="Imagen ilustrativa de equipo de limpieza">
+        <div class="limpieza_img_container revealing-image">
+          <img class="revealing-image" src="./assets/limpieza.webp" alt="Imagen ilustrativa de equipo de limpieza">
+        </div>
       </div>
     </section>
     <section class="extras">
-      <h3>Tambien trabajamos:</h3>
+      <h2>Tambien trabajamos:</h2>
       <div>
         <ul>
           <li>PINTURA Y RESANE DE AREAS COMUNES</li>
@@ -95,12 +96,15 @@
     <section class="reportes">
       <div>
         <p>Trabajamos todas nuestras áreas, con la misma dedicacion! Personalizamos nuestros servicios a tus necesidades, ofreciendo solo aquello que necesitas.</p>
-        <img src="" alt="">
-        <p>Nuestro equipo le entregará un reporte de las actividades que hemos realizado para que estes al tanto del estado de tu inmueble.</p>
-        <a href="" class="contact_Button" alt="Boton de Contacto">Contactanos</a>
+        <img src="./assets/cherck-list.png" alt="imagen de lista">
+        <p class="text2">Nuestro equipo le entregará un reporte de las actividades que hemos realizado para que estes al tanto del estado de tu inmueble.</p>
+        <a href="https://wa.me/5650719948?text=Hola!!%0AQuisiera%20saber%20más%20acera%20de%20sus%20servicios." class="contact_button" alt="Boton de Contacto" target="_blank">Contactanos</a>
       </div>
     </section>
   </main>
+  <footer>
+    <a href="https://www.flaticon.es/iconos-gratis/lista-de-la-compra" title="lista de la compra iconos">Iconos creados por Shahid-Mehmood - Flaticon</a>
+  </footer>
   <script src="./main.js"></script>
 </body>
 </html>

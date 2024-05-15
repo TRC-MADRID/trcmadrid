@@ -1,0 +1,12 @@
+@keyframes reveal {
+  from { opacity: 0; clip-path: inset(0% 60% 0% 50%); }
+  to { opacity: 1; clip-path: inset(0% 0% 0% 0%); }
+}
+.revealing-image {
+  view-timeline-name: --revealing-image;
+  view-timeline-axis: block;
+
+  animation: auto linear reveal both;
+  animation-timeline: --revealing-image;
+  animation-range: entry 25% cover 50%;
+}
